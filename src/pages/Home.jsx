@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../components/ui/button";
+import Services from "../components/Services";
 
 export default function Home() {
   return (
@@ -97,6 +98,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      {/* Services */}
+      <section className=" max-w-[1260px] mx-auto">
+        <Services />
       </section>
     </>
   );
