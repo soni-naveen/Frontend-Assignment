@@ -67,7 +67,7 @@ export default function Home() {
           <div className="flex flex-col gap-16 xl:gap-32 xl:justify-between w-fit">
             <h1 className="text-6xl font-extrabold">What do we do?</h1>
             <div>
-              <h1 className="text-6xl font-extrabold tracking-widest">
+              <h1 className="text-6xl font-extrabold tracking-widest mb-3">
                 Who are we?
               </h1>
               <p className="text-sm w-[450px] text-justify">
