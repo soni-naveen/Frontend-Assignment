@@ -6,7 +6,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 
 const Footer = ({}) => {
   return (
-    <div className="flex justify-evenly mb-10">
+    <div className="flex justify-evenly my-10">
       <div className="logo">
         <img src={logo} alt="Logo" />
       </div>
