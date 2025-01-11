@@ -7,6 +7,7 @@ import strategies from "../assets/strategies.png";
 import success from "../assets/success.png";
 import reporting from "../assets/tranparentreporting.png";
 import FAQ from "../components/FAQ";
+import rocket from "../assets/rocket.png";
 
 export default function Services() {
   return (
@@ -125,8 +126,23 @@ export default function Services() {
       </section>
       <div className="h-[0.5px] bg-gray-500"></div>
       {/* FAQ's */}
-      <section>
+      <section className="mb-10">
         <FAQ />
+      </section>
+      {/* Contact Us  */}
+      <section>
+        <div className="bg-gradient-to-r from-default via-default to-gray-700 to-97% rounded-[30px] flex flex-col items-center space-y-10 py-20 tracking-wider -mb-[300px]">
+          <h1 className="text-6xl text-center font-extrabold text-white leading-snug">
+            Contact Us for a <br /> Customized SEO Strategy!
+          </h1>
+          <button className="bg-white flex gap-5 w-fit items-center px-5 py-2 rounded-full">
+            Schedule A Demo
+            <BsArrowRightCircle className="text-xl" />
+          </button>
+        </div>
+        <div className="relative top-10 -left-28">
+          <img src={rocket} alt="rocket" className="relative" />
+        </div>
       </section>
     </div>
   );
