@@ -126,7 +126,7 @@ export default function Services() {
       </section>
       <div className="h-[0.5px] bg-gray-500"></div>
       {/* FAQ's */}
-      <section className="mb-10">
+      <section className="my-10">
         <FAQ />
       </section>
       {/* Contact Us  */}
