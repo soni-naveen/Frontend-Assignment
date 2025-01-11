@@ -6,6 +6,7 @@ import result from "../assets/resultdriven.png";
 import strategies from "../assets/strategies.png";
 import success from "../assets/success.png";
 import reporting from "../assets/tranparentreporting.png";
+import FAQ from "../components/FAQ";
 
 export default function Services() {
   return (
@@ -123,6 +124,10 @@ export default function Services() {
         </div>
       </section>
       <div className="h-[0.5px] bg-gray-500"></div>
+      {/* FAQ's */}
+      <section>
+        <FAQ />
+      </section>
     </div>
   );
 }
