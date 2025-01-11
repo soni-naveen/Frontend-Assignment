@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { IoCaretDownSharp } from "react-icons/io5";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [active, setActive] = useState("home");
 
   const handleSetActive = (page) => {
@@ -40,7 +41,10 @@ const Navbar = () => {
             className={`px-5 py-0.5 rounded-full flex items-center gap-2 cursor-pointer ${
               active === "services" ? "bg-white text-black" : "text-white"
             }`}
-            onClick={() => handleSetActive("services")}
+            onClick={() => {
+              handleSetActive("services");
+              navigate("/services");
+            }}
           >
             <span>Services</span>
             <IoCaretDownSharp />
