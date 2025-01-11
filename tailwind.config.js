@@ -8,6 +8,10 @@ export default {
         laptop2: "url('assets/laptop2.png')",
         bgdot: "url('assets/bg.png')",
       },
+      colors: {
+        default: "#2b2b2b",
+        defaultlight: "#474848",
+      },
     },
   },
   plugins: [],

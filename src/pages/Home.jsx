@@ -4,10 +4,11 @@ import ServiceGrid from "../components/ServiceGrid";
 import laptop1 from "../assets/laptop1.png";
 import laptop2 from "../assets/laptop2.png";
 import image from "../assets/image.png";
+import { FaCircleArrowRight } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <>
+    <main className="max-w-[1800px] mx-auto">
       {/* Hero Section */}
       <section className="text-center py-20 px-6">
         <h1 className="text-9xl font-extrabold tracking-wide">
@@ -29,7 +30,7 @@ export default function Home() {
         </div>
       </section>
       {/* Our Latest Work  */}
-      <section className="bg-[#2b2b2b] tracking-widest rounded-[30px] py-7">
+      <section className="bg-default tracking-widest rounded-[30px] py-7">
         <h3 className="text-white ml-10">Our Latest Work</h3>
         <div className="flex flex-col gap-10 xl:gap-0 xl:flex-row justify-evenly items-center">
           <div className="bg-laptop1 bg-cover rounded-xl p-5 h-[400px] flex flex-col justify-between">
@@ -107,7 +108,7 @@ export default function Home() {
         <ServiceGrid />
       </section>
       {/* Our Work  */}
-      <section className="bg-[#2b2b2b] tracking-wider rounded-[30px] p-16">
+      <section className="bg-default tracking-wider rounded-[30px] p-16">
         <div className="flex justify-between max-w-[1460px] mx-auto">
           <h1 className="text-5xl tracking-widest text-white font-extrabold">
             Our Work
@@ -227,6 +228,24 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+      {/* Title  */}
+      <section className="bg-gradient-to-r from-gray-500 via-defaultlight to-default to-25% tracking-widest rounded-[30px] py-28 flex flex-col mb-20">
+        <div className="mx-auto">
+          <p className="text-7xl font-extrabold text-white tracking-widest">
+            Let's Amplify,
+          </p>
+          <p className="text-7xl font-extrabold text-white tracking-widest ml-16 p-5">
+            Your Brand's Impact
+          </p>
+        </div>
+        <div className="flex items-center w-fit mt-5 mx-auto xl:ml-96 gap-20 bg-white py-2 px-5 rounded-full">
+          <span>Schedule A Call</span>
+          <button className="bg-black text-white px-5 py-1 rounded-full tracking-widest text-sm flex items-center gap-3">
+            Let's Go
+            <FaCircleArrowRight className="text-lg" />
+          </button>
+        </div>
+      </section>
+    </main>
   );
 }
