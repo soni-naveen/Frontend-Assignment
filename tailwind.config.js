@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         laptop1: "url('assets/laptop1.png')",
         laptop2: "url('assets/laptop2.png')",
+        bgdot: "url('assets/bg.png')",
       },
     },
   },

@@ -57,8 +57,46 @@ export default function Home() {
         </div>
       </section>
       {/* What We Do  */}
-      <section>
-        
+      <section className="bg-bgdot ">
+        <div className="tracking-widest flex max-w-[1260px] mx-auto gap-36 py-16">
+          <div className="flex flex-col justify-between w-fit">
+            <h1 className="text-6xl font-extrabold">What do we do?</h1>
+            <div>
+              <h1 className="text-6xl font-extrabold tracking-widest">
+                Who are we?
+              </h1>
+              <p className="text-sm w-[450px] text-justify">
+                We're a digital marketing agency focused on delivering creative,
+                data-driven solutions that help brands grow. We specialize in
+                social media, SEO, and web design, creating strategies that
+                drive results and make your brand stand out.
+              </p>
+            </div>
+          </div>
+          <div className="text-white space-y-7 w-fit">
+            <div className="bg-[#2b2b2b] px-16 py-5 rounded-[40px]">
+              <h1 className="text-3xl">We Design</h1>
+              <p className="text-sm">
+                We create it all. Sit back, relax, and watch your vision come to
+                life. Stunning design, clear messaging, and flawless execution.
+              </p>
+            </div>
+            <div className="bg-[#2b2b2b] px-16 py-5 rounded-[40px]">
+              <h1 className="text-3xl">We Build</h1>
+              <p className="text-sm">
+                Built for the future. We turn complex ideas into seamless,
+                scalable digital experiences.
+              </p>
+            </div>
+            <div className="bg-[#2b2b2b] px-16 py-5 rounded-[40px]">
+              <h1 className="text-3xl">We Grow</h1>
+              <p className="text-sm">
+                Marketing that works. We connect your brand with the right
+                audience through strategy, creativity, and impact.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );
