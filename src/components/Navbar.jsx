@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { IoCaretDownSharp } from "react-icons/io5";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("");
+  useEffect(() => {
+    const path = window.location.pathname.split("/")[1] || "home";
+    setActive(path);
+  }, []);
 
   const handleSetActive = (page) => {
     setActive(page);

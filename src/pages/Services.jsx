@@ -2,6 +2,10 @@ import React from "react";
 import image from "../assets/tablelaptop.png";
 import { BsArrowRightCircle } from "react-icons/bs";
 import search from "../assets/search.png";
+import result from "../assets/resultdriven.png";
+import strategies from "../assets/strategies.png";
+import success from "../assets/success.png";
+import reporting from "../assets/tranparentreporting.png";
 
 export default function Services() {
   return (
@@ -34,7 +38,7 @@ export default function Services() {
           <img src={image} alt="seo" />
         </div>
       </section>
-      <div className="h-[1px] bg-gray-500 px"></div>
+      <div className="h-[1px] bg-gray-500"></div>
       {/* What is SEO  */}
       <section>
         <h1 className="text-5xl font-extrabold mt-20">What is SEO?</h1>
@@ -84,6 +88,41 @@ export default function Services() {
           </div>
         </div>
       </section>
+      {/* Why Choose Us?  */}
+      <section className="mb-10">
+        <h1 className="text-5xl font-extrabold mt-16 mb-7 text-center">
+          Why Choose Us?
+        </h1>
+        <div className="flex justify-between mt-16">
+          <div className="space-y-7">
+            <div>
+              <img src={result} alt="Results-driven approach" />
+            </div>
+            <p>Results-driven approach</p>
+          </div>
+          <div className="space-y-7">
+            <div>
+              <img src={reporting} alt="Transparent reporting" />
+            </div>
+            <p>Transparent reporting</p>
+          </div>
+          <div className="space-y-7">
+            <div>
+              <img src={strategies} alt="strategies" />
+            </div>
+            <p className="text-center w-56">
+              Custom strategies tailored to each business
+            </p>
+          </div>
+          <div className="space-y-7">
+            <div>
+              <img src={success} alt="success" />
+            </div>
+            <p className="text-center w-40">Proven track record of success</p>
+          </div>
+        </div>
+      </section>
+      <div className="h-[0.5px] bg-gray-500"></div>
     </div>
   );
 }
